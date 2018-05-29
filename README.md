@@ -20,7 +20,7 @@ self complemented MicroIndexSpyderbased on Selenium ，新浪微博指数(微指
     '''主函数'''
     def index_main(self, word, start_date, end_date):
         # 打开数据页面
-        print('step1, open page....')
+        print('step1, open page....')3
         driver = self.search_index(word)
         # 构造请求，获取指数json数据
         print('step2, get data....')
@@ -54,5 +54,5 @@ self complemented MicroIndexSpyderbased on Selenium ，新浪微博指数(微指
 ![image](https://github.com/liuhuanyong/MicroIndexSpyder/blob/master/image/sina_index_vs.png)
 
 # 总结
-1、微指指数的采集难度介于百度指数与阿里指数之间，两个特点：1)指数有js动态请求而成，可以通过构造请求，解析获得。2)无需用户登录。    
+1、微指数的采集难度介于百度指数与阿里指数之间，两个特点：1)指数有js动态请求而成，可以通过构造请求，解析获得。2)无需用户登录。    
 2、微指数收录的日期比阿里指数要广，较百度指数要窄，但基于微博这一层面得到的数据，对于相关研究还是有一定新意的。 
