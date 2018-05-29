@@ -1,15 +1,20 @@
 # MicroIndexSpyder
-self complemented MicroIndexSpyderbased on Selenium ，新浪微博指数抓取，包括综合指数，移动端指数，PC端指数。
+self complemented MicroIndexSpyderbased on Selenium ，新浪微博指数(微指数)采集，包括综合指数，移动端指数，PC端指数。
 
 # 项目介绍
-1、阿里指数 是了解电子商务平台市场动向的数据分析平台，2012年11月26日，阿里指数正式上线。根据阿里巴巴网站每日运营的基本数据包括每天网站浏览量、每天浏览的人次、每天新增供求产品数、新增公司数和产品数这5项指标统计计算得出。  
-2、阿里指数对于收录的商品关键词，在指数方面提供阿里商品指数抓取，包括淘宝采购指数，淘宝供应指数，1688供应指数三个指数，基于三个指数，可以在一定程度上反映出该商品的供需行情，与商品的价格相比，能够得出一些相关性的结论。
+1、微指数是基于海量用户行为数据、博文数据，采用科学计算方法统计得出的反映不同事件领域发展状况的指数产品。    
+2、微指数对于收录的关键词，在指数方面提供微博数据层面的指数数据，包括综合指数、移动指数、PC指数三个指数。  
 
 # 项目举例
-以‘连衣裙’这一商品关键词为例，要求获取连衣裙的三个指数数据。由于阿里指数至提供近一年的指数数据，因此，只能采集一年的数据，原始结果如下：
-# 原始综合指数
+以‘中兴’这一关键词为例，要求获取中兴的三个指数数据。微指数的数据收录时间有范围，范围表现在：  
+1）整体趋势：2013-03-01-至今  
+2）移动趋势：2014-01-06-至今  
+3）PC趋势：2014-01-06-至今  
+本例子设定start_date = '2016-05-29'，end_date = '2018-05-29'， 原始结果如下：
+
+# 一、原始综合指数
 ![image](https://github.com/liuhuanyong/MicroIndexSpyder/blob/master/image/sina_index_general.png)
-# 原始移动/pc指数
+# 二、原始移动/pc指数
 ![image](https://github.com/liuhuanyong/MicroIndexSpyder/blob/master/image/sina_index_yd.png)
 # 实现流程
     '''主函数'''
@@ -39,16 +44,15 @@ self complemented MicroIndexSpyderbased on Selenium ，新浪微博指数抓取�
     demo()
 # 效果
 将得到的数据文件，进行本地可视化，效果如下：
-# 综合指数
+# 一、综合指数
 ![image](https://github.com/liuhuanyong/MicroIndexSpyder/blob/master/image/index_general_local.png)
-# 移动指数
+# 二、移动指数
 ![image](https://github.com/liuhuanyong/MicroIndexSpyder/blob/master/image/index_mobile_local.png)
-# PC指数
+# 三、PC指数
 ![image](https://github.com/liuhuanyong/MicroIndexSpyder/blob/master/image/index_pc_local.png)
-# 指数对比
+# 四、指数对比
 ![image](https://github.com/liuhuanyong/MicroIndexSpyder/blob/master/image/sina_index_vs.png)
 
 # 总结
-1、阿里指数的采集较为简单，1)阿里指数直接将历时数据写在前端页面中，可以直接解析获得。2)无需用户登录。    
-2、阿里指数与百度指数不同，其对应的关键词实体需要对应到具体的行业或商品上，而用户查询的关键词具有多样性，这样会导致可能无法正确获取严格的关键词商品指数，如搜索iphone，会得到电子产品的指数。  
-3、比较遗憾的是，阿里指数只提供以查询当日为结束如日，往前推一年为开始日期的数据，对于历时数据的构建来说，不是太方便。  
+1、微指指数的采集难度介于百度指数与阿里指数之间，两个特点：1)指数有js动态请求而成，可以通过构造请求，解析获得。2)无需用户登录。    
+3、微指数收录的日期比阿里指数要广，较百度指数要窄，但基于微博这一层面得到的数据，对于相关研究还是有一定新意的。 
