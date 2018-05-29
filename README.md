@@ -42,9 +42,9 @@ self complemented MicroIndexSpyderbased on Selenium ，新浪微博指数抓取�
 # 综合指数
 ![image](https://github.com/liuhuanyong/MicroIndexSpyder/blob/master/image/index_general_local.png)
 # 移动指数
-![image](https://github.com/liuhuanyong/MicroIndexSpyder/blob/master/image/sina_mobile_local.png)
+![image](https://github.com/liuhuanyong/MicroIndexSpyder/blob/master/image/index_mobile_local.png)
 # PC指数
-![image](https://github.com/liuhuanyong/MicroIndexSpyder/blob/master/image/sina_pc_local.png)
+![image](https://github.com/liuhuanyong/MicroIndexSpyder/blob/master/image/index_pc_local.png)
 # 指数对比
 ![image](https://github.com/liuhuanyong/MicroIndexSpyder/blob/master/image/sina_index_vs.png)
 
